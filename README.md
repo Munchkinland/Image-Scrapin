@@ -67,6 +67,8 @@ Estructura del Proyecto
 - app.py: Archivo principal que ejecuta la aplicación Flask.
 - images.db: Base de datos SQLite que almacena las imágenes.
 - templates/index.html: Plantilla HTML para la interfaz web.
+- static/styles.css: Hoja de estilos
+- static/script.js: Archivo Java Script
 - requirements.txt: Archivo de dependencias de Python.
 
 Clona el repositorio para trabajar en él:
