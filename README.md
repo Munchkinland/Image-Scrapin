@@ -27,4 +27,64 @@
 
    ```bash
    git clone https://github.com/Munchkinland/Image-Scraping.git
+
+  Luego, navega al directorio del proyecto:
+
+cd Image-Scraping
+
+Instalar Dependencias
+
+Se recomienda usar un entorno virtual. Si aún no tienes virtualenv, instálalo:
+
+pip install virtualenv
+
+Crea y activa un entorno virtual:
+
+- virtualenv venv
+- source venv/bin/activate  # En Windows: venv\Scripts\activate
   
+Instala las dependencias necesarias:
+
+- pip install -r requirements.txt
+
+Iniciar la Aplicación
+
+Ejecuta el servidor Flask con:
+
+- python app.py
+  
+La aplicación estará disponible en http://127.0.0.1:5000.
+
+Interfaz Web
+
+- Página Principal: Accede a http://127.0.0.1:5000 para utilizar la interfaz web de la aplicación.
+- Formulario de Búsqueda: Introduce una consulta o sube un archivo de Excel para buscar imágenes.
+- Descarga de Imágenes: Después de realizar búsquedas, puedes descargar todas las imágenes almacenadas como un archivo ZIP.
+  
+Estructura del Proyecto
+- app.py: Archivo principal que ejecuta la aplicación Flask.
+- images.db: Base de datos SQLite que almacena las imágenes.
+- templates/index.html: Plantilla HTML para la interfaz web.
+- requirements.txt: Archivo de dependencias de Python.
+
+Clona el repositorio para trabajar en él:
+
+- git clone https://github.com/Munchkinland/Image-Scraping.git
+
+  Crear una Rama
+
+- git checkout -b nombre-de-tu-rama
+
+Realiza tus cambios y haz un commit:
+
+- git add .
+- git commit -m "Descripción de tus cambios"
+  
+Empujar Cambios y Crear un Pull Request
+
+- git push origin nombre-de-tu-rama
+- Luego, ve a GitHub y crea un pull request para que tus cambios sean revisados.
+
+Licencia
+
+- Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
