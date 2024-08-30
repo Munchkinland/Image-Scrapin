@@ -1,5 +1,7 @@
  # Image Scraping
 
+ ![web-scraping-introduction-1](https://github.com/user-attachments/assets/464cce46-9be1-4a01-bbde-9359742a07c8)
+
 **Image Scraping** es una aplicación web que permite buscar y descargar imágenes de la web. Los usuarios pueden buscar imágenes basadas en consultas de texto o subir un archivo de Excel con nombres de imágenes para buscarlas automáticamente. Las imágenes descargadas se almacenan en una base de datos SQLite y se pueden descargar como un archivo ZIP.
 
 ## Funcionalidades
