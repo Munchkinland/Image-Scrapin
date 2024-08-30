@@ -1,0 +1,119 @@
+body {
+    font-family: 'MS Sans Serif', Arial, sans-serif;
+    background-color: #008080;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #C0C0C0;
+    border: 2px solid #000;
+    padding: 20px;
+    box-shadow: 2px 2px 5px #000;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="file"], input[type="submit"] {
+    border: 2px solid #000;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    background-color: #FFF;
+    color: #000;
+}
+
+input[type="submit"] {
+    background-color: #0000FF;
+    color: #FFF;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #00008B;
+}
+
+.progress {
+    background-color: #C0C0C0;
+    border: 2px solid #000;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-card {
+    width: calc(25% - 10px);
+    background-color: #FFF;
+    border: 2px solid #000;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #000;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.image-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.download-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #0000FF;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #000;
+    width: fit-content;
+}
+
+.download-btn:hover {
+    background-color: #00008B;
+}
+
+/* Estilo para el GIF de carga */
+#spinner {
+    display: none; /* Ocultar el contenedor por defecto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #000;
+    padding: 40px; /* Aumentar el padding para el contenedor */
+    box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Aumentar el tamaño de la sombra */
+    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+    text-align: center; /* Centrar el contenido dentro del contenedor */
+}
+
+#spinner img {
+    width: 100px; /* Tamaño del GIF */
+    height: auto;
+}

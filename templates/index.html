@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraping App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Enlaza el CSS aquí -->
+</head>
+<body>
+
+<div class="container">
+    <h1>Scraping App powered by Bing</h1>
+
+    <div class="progress" id="progress">
+        Progreso: <span id="progress-text">Esperando inicio...</span>
+    </div>
+
+    <form id="scrape-form">
+        <div class="form-group">
+            <label for="query">Buscar término:</label>
+            <input type="text" id="query" name="query">
+        </div>
+        <div class="form-group">
+            <label for="file">O subir archivo Excel:</label>
+            <input type="file" id="file" name="file" accept=".xlsx, .xls">
+        </div>
+        <input type="submit" value="Iniciar scraping">
+    </form>
+
+    <div class="gallery" id="gallery">
+        <!-- Aquí se mostrarán las imágenes descargadas -->
+    </div>
+
+    <a href="/download_images" class="download-btn" id="downloadSection" style="display: none;">Descargar todas las imágenes</a>
+
+    <!-- Spinner de carga -->
+    <div id="spinner">
+        <img src="{{ url_for('static', filename='loading.gif') }}" alt="Cargando...">
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
